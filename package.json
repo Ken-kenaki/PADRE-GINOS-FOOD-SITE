@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx, css}\"",
     "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "@vitejs/plugin-react": "^4.3.1",
+    "prettier": "^3.4.2",
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

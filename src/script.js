@@ -1,3 +1,7 @@
+import React from 'react';
+import { createRoot } from 'react-dom';
+
+
 const user = (userInput)=>{
     return React.createElement(
         'div',
@@ -28,5 +32,5 @@ const app = ()=>{
 const container = document.getElementById('root');
 
 
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 root.render(React.createElement(app));
